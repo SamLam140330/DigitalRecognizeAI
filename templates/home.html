@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>body {
+        text-align: center;
+    }</style>
+</head>
+<body>
+<h1>Hello, Thank you for choosing this website!</h1>
+<p>Please upload a handwritten digit's photo that you want to predict</p>
+<form method="POST" action="/uploads" enctype="multipart/form-data">
+    <p><input type="file" name="file"></p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+<p style="color:#ff0000">{{ error }}</p>
+</body>
+</html>
